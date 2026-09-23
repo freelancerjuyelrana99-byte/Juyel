@@ -1,5 +1,13 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { Category, Tool, BlogPost, VideoItem, Advertisement, SiteSettings } from '../types';
+import {
+  DEFAULT_CATEGORIES,
+  DEFAULT_TOOLS,
+  DEFAULT_POSTS,
+  DEFAULT_VIDEOS,
+  DEFAULT_ADVERTISEMENTS,
+  DEFAULT_SETTINGS,
+} from '../data/defaultData';
 
 interface AppContextType {
   categories: Category[];
@@ -26,13 +34,13 @@ interface AppContextType {
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [categories, setCategories] = useState<Category[]>([]);
-  const [tools, setTools] = useState<Tool[]>([]);
-  const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [videos, setVideos] = useState<VideoItem[]>([]);
-  const [advertisements, setAdvertisements] = useState<Advertisement[]>([]);
-  const [settings, setSettings] = useState<Partial<SiteSettings>>({});
-  const [isLoading, setIsLoading] = useState(true);
+  const [categories, setCategories] = useState<Category[]>(DEFAULT_CATEGORIES);
+  const [tools, setTools] = useState<Tool[]>(DEFAULT_TOOLS);
+  const [posts, setPosts] = useState<BlogPost[]>(DEFAULT_POSTS);
+  const [videos, setVideos] = useState<VideoItem[]>(DEFAULT_VIDEOS);
+  const [advertisements, setAdvertisements] = useState<Advertisement[]>(DEFAULT_ADVERTISEMENTS);
+  const [settings, setSettings] = useState<Partial<SiteSettings>>(DEFAULT_SETTINGS);
+  const [isLoading, setIsLoading] = useState(false);
 
   // Theme state
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
