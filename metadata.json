@@ -1,0 +1,6 @@
+{
+  "name": "ToolBox BD",
+  "description": "All Your Useful Tools in One Place - Free, fast and easy-to-use online tools for AI, images, PDF, text, calculators, student, career, freelancing, Bangla and utility tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
