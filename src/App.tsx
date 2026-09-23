@@ -14,6 +14,7 @@ import { ContentPage } from './pages/ContentPage';
 import { ToolDispatcher } from './tools/ToolDispatcher';
 import { AdminDashboard } from './admin/AdminDashboard';
 import { AdminLogin } from './admin/AdminLogin';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 // Helper to detect repository prefix for GitHub Pages (e.g. /my-repo)
 export function getRepoPrefix(): string {
@@ -219,8 +220,10 @@ function AppContent() {
 
 export default function App() {
   return (
-    <AppProvider>
-      <AppContent />
-    </AppProvider>
+    <ErrorBoundary>
+      <AppProvider>
+        <AppContent />
+      </AppProvider>
+    </ErrorBoundary>
   );
 }
