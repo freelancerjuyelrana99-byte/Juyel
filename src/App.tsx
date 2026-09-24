@@ -89,6 +89,16 @@ function AppContent() {
   // Check if current route is an admin page
   const isAdminRoute = currentPath.startsWith('/admin');
 
+  // Adsterra Integration Safeguard: Ensure third-party ad scripts are NEVER executed on /admin routes
+  useEffect(() => {
+    if (isAdminRoute) {
+      const adsterraScript = document.getElementById('adsterra-ad-script');
+      if (adsterraScript) {
+        adsterraScript.remove();
+      }
+    }
+  }, [isAdminRoute]);
+
   // If loading public config
   if (isLoading) {
     return (

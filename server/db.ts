@@ -1106,58 +1106,58 @@ Cookies are small pieces of text sent to your web browser by a website you visit
 
 export const INITIAL_ADVERTISEMENTS: Advertisement[] = [
   {
-    id: 'ad-header-banner',
-    name: 'Header Top Leaderboard',
-    network: 'Google AdSense',
-    type: 'Responsive',
-    code: '<!-- Responsive Leaderboard Demo -->\n<div style="background: linear-gradient(90deg, rgba(6,182,212,0.1), rgba(99,102,241,0.1)); border: 1px dashed rgba(6,182,212,0.3); border-radius: 8px; padding: 12px; text-align: center; color: #94a3b8; font-size: 13px;">\n  <span style="display:block; font-weight: 600; color: #38bdf8;">[ Advertisement Space — Header Top ]</span>\n  <span>Google AdSense / Adsterra Responsive Banner</span>\n</div>',
-    placement: 'Header Top',
-    device: 'All Devices',
-    status: true,
-    createdAt: '2026-03-01'
-  },
-  {
     id: 'ad-below-hero',
-    name: 'Below Hero Banner',
-    network: 'Google AdSense',
+    name: 'Adsterra Below Hero Banner',
+    network: 'Adsterra',
     type: 'Responsive',
-    code: '<!-- Below Hero Banner -->\n<div style="background: rgba(15,23,42,0.6); border: 1px dashed rgba(99,102,241,0.3); border-radius: 8px; padding: 14px; text-align: center; color: #94a3b8; font-size: 13px;">\n  <span style="display:block; font-weight: 600; color: #818cf8;">[ Advertisement Space — Below Hero ]</span>\n  <span>High-performing 728x90 or responsive display unit</span>\n</div>',
+    code: '<script src="https://pl31483464.profitableratecpmnetwork.com/db/77/79/db7779bfe0e312a783c41c05e63abd3c.js"></script>',
     placement: 'Below Hero',
     device: 'All Devices',
     status: true,
     createdAt: '2026-03-01'
   },
   {
-    id: 'ad-before-tool',
-    name: 'Before Tool Ad Unit',
-    network: 'Google AdSense',
+    id: 'ad-between-content',
+    name: 'Between Content Placement',
+    network: 'Adsterra',
     type: 'Responsive',
-    code: '<!-- Before Tool -->\n<div style="background: rgba(30,41,59,0.5); border: 1px dashed rgba(148,163,184,0.3); border-radius: 8px; padding: 12px; text-align: center; color: #94a3b8; font-size: 12px;">\n  <span style="font-weight: 600; color: #38bdf8;">Sponsored Ad:</span> Best hosting & tools for developers\n</div>',
-    placement: 'Before Tool',
+    code: '',
+    placement: 'Between Content',
     device: 'All Devices',
-    status: true,
+    status: false,
     createdAt: '2026-03-01'
   },
   {
     id: 'ad-after-tool',
-    name: 'After Tool Rectangle Banner',
+    name: 'After Tool Results Placement',
     network: 'Adsterra',
     type: 'Native',
-    code: '<!-- After Tool Native Ad -->\n<div style="background: rgba(15,23,42,0.8); border: 1px dashed rgba(52,211,153,0.3); border-radius: 8px; padding: 14px; text-align: center; color: #94a3b8; font-size: 13px;">\n  <span style="display:block; font-weight: 600; color: #34d399;">[ Native Sponsored Recommendations ]</span>\n  <span>Adsterra Native Ad Container</span>\n</div>',
+    code: '',
     placement: 'After Tool',
     device: 'All Devices',
-    status: true,
+    status: false,
+    createdAt: '2026-03-01'
+  },
+  {
+    id: 'ad-blog-bottom',
+    name: 'Blog Bottom Placement',
+    network: 'Adsterra',
+    type: 'Responsive',
+    code: '',
+    placement: 'Blog Bottom',
+    device: 'All Devices',
+    status: false,
     createdAt: '2026-03-01'
   },
   {
     id: 'ad-footer',
-    name: 'Footer Leaderboard',
-    network: 'Google AdSense',
+    name: 'Footer Area Placement',
+    network: 'Adsterra',
     type: 'Responsive',
-    code: '<!-- Footer Ad -->\n<div style="background: rgba(15,23,42,0.4); border: 1px dashed rgba(100,116,139,0.25); border-radius: 8px; padding: 12px; text-align: center; color: #64748b; font-size: 12px;">\n  <span>Advertisement — Support free tools on ToolBox BD</span>\n</div>',
+    code: '',
     placement: 'Footer',
     device: 'All Devices',
-    status: true,
+    status: false,
     createdAt: '2026-03-01'
   }
 ];

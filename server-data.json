@@ -1,4 +1,8 @@
 {
+  "admin": {
+    "email": "admin@toolboxbd.com",
+    "passwordHash": "$2b$10$TChvw266n8/KErHZx3KJv.hgZ5vzE2lx9Qyrma31N3KfuCdpGVfl2"
+  },
   "categories": [
     {
       "id": "cat-ai",
@@ -1167,6 +1171,7 @@
       "createdAt": "2026-03-01"
     }
   ],
+  "media": [],
   "settings": {
     "siteName": "ToolBox BD",
     "tagline": "All Your Useful Tools in One Place",
@@ -1181,5 +1186,112 @@
     "metaDescription": "Free, fast and easy-to-use online tools for everyday work, study, business and creativity. Image compressor, PDF tools, AI generators, calculators, and Bangla tools.",
     "ogImage": "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1200&auto=format&fit=crop&q=80",
     "maintenanceMode": false
-  }
+  },
+  "analytics": {
+    "totalVisitors": 28450,
+    "todayVisitors": 1284,
+    "pageViews": 64920,
+    "deviceStats": {
+      "desktop": 58,
+      "mobile": 36,
+      "tablet": 6
+    },
+    "topTools": [
+      {
+        "name": "Image Compressor",
+        "slug": "image-compressor",
+        "views": 8940
+      },
+      {
+        "name": "AI Prompt Generator",
+        "slug": "ai-prompt-generator",
+        "views": 7620
+      },
+      {
+        "name": "YouTube Title Generator",
+        "slug": "youtube-title-generator",
+        "views": 6310
+      },
+      {
+        "name": "Age Calculator",
+        "slug": "age-calculator",
+        "views": 5120
+      },
+      {
+        "name": "Bangla to Banglish Converter",
+        "slug": "bangla-to-banglish-converter",
+        "views": 4890
+      },
+      {
+        "name": "CV Maker & Resume Builder",
+        "slug": "cv-maker",
+        "views": 4210
+      },
+      {
+        "name": "QR Code Generator",
+        "slug": "qr-code-generator",
+        "views": 3950
+      }
+    ],
+    "topPages": [
+      {
+        "path": "/",
+        "views": 24200
+      },
+      {
+        "path": "/tools",
+        "views": 18500
+      },
+      {
+        "path": "/blog",
+        "views": 8200
+      },
+      {
+        "path": "/videos",
+        "views": 5400
+      },
+      {
+        "path": "/category/ai-tools",
+        "views": 4900
+      }
+    ],
+    "dailyViews": [
+      {
+        "date": "2026-03-17",
+        "views": 2100,
+        "visitors": 950
+      },
+      {
+        "date": "2026-03-18",
+        "views": 2450,
+        "visitors": 1080
+      },
+      {
+        "date": "2026-03-19",
+        "views": 2780,
+        "visitors": 1150
+      },
+      {
+        "date": "2026-03-20",
+        "views": 2600,
+        "visitors": 1100
+      },
+      {
+        "date": "2026-03-21",
+        "views": 3100,
+        "visitors": 1320
+      },
+      {
+        "date": "2026-03-22",
+        "views": 2950,
+        "visitors": 1240
+      },
+      {
+        "date": "2026-03-23",
+        "views": 3200,
+        "visitors": 1284
+      }
+    ]
+  },
+  "sessions": {}
 }
