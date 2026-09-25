@@ -6,10 +6,7 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   const getBase = () => {
     if (process.env.BASE_PATH) return process.env.BASE_PATH;
-    if (process.env.GITHUB_REPOSITORY) {
-      const repo = process.env.GITHUB_REPOSITORY.split('/')[1];
-      return `/${repo}/`;
-    }
+    // './' allows the built SPA to run universally under any repo name (e.g. /Juyel/), root, or custom domain
     return './';
   };
 
@@ -18,7 +15,7 @@ export default defineConfig(() => {
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve('.'),
       },
     },
     server: {
